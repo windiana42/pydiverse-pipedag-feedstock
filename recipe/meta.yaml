@@ -32,6 +32,7 @@ requirements:
     - structlog >=22.1.0
     - tomli >=2.0.1
     - typing-extensions >=4.1.0,<5
+    - python-box >=6.1.0
 
 test:
   imports:
