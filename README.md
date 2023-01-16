@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydiverse-pipedag-feedstock/blob/main/LICENSE.txt)
 
-Summary: A pipeline orchestration layer built on top of prefect for caching and cache invalidation to SQL and blob store targets.
+Summary: A pipeline orchestration library executing tasks within one python session. It takes care of SQL table (de)materialization, caching and cache invalidation. Blob storage is supported as well for example for storing model files.
 
 Current build status
 ====================
