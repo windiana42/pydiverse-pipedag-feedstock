@@ -1,11 +1,11 @@
-About pydiverse-pipedag
-=======================
+About pydiverse-pipedag-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydiverse-pipedag-feedstock/blob/main/LICENSE.txt)
 
 Home: None
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydiverse-pipedag-feedstock/blob/main/LICENSE.txt)
 
 Summary: A pipeline orchestration library executing tasks within one python session. It takes care of SQL table (de)materialization, caching and cache invalidation. Blob storage is supported as well for example for storing model files.
 
@@ -143,5 +143,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@NMAC427](https://github.com/NMAC427/)
 * [@windiana42](https://github.com/windiana42/)
 
