@@ -1,13 +1,13 @@
 {% set name = "pydiverse-pipedag" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 14c0f724ecf8de0730db938cde1e02cf18da073a8f6038a553188c59f2b82835
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydiverse_pipedag-{{ version }}.tar.gz
+  sha256: 5a9d8393dc63fcd880df25bc5456ea79f311b9f6cd4e654e13bb9a11e8fa524a
 
 build:
   noarch: python
@@ -27,13 +27,13 @@ requirements:
     - networkx >=2.8
     - attrs >=22.1.0
     - structlog >=22.1.0
-    - tomli >=2.0.1
     - pynng >=0.7.1
     - msgpack-python >=1.0.4
     - packaging >=21.3
     - python-box >=6.1.0
     - pyyaml >=6.0
     - pyarrow >=11.0.0
+    - cryptography >=41.0.1
 
 test:
   imports:
