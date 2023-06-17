@@ -1,5 +1,5 @@
 {% set name = "pydiverse-pipedag" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydiverse_pipedag-{{ version }}.tar.gz
-  sha256: 5a9d8393dc63fcd880df25bc5456ea79f311b9f6cd4e654e13bb9a11e8fa524a
+  sha256: 95be6d4b1ba97ca4184d1056638be1193179509aa56106fad5ab0fb4b319f868
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.9,<4.0
     - pandas >=1.4.3
     - sqlalchemy >=1.4.39
-    - typing-extensions <5,>=4.1.0
+    - typing-extensions >=4.1.0,<5.0.0
     - networkx >=2.8
     - attrs >=22.1.0
     - structlog >=22.1.0
