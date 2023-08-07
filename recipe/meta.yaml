@@ -1,5 +1,5 @@
 {% set name = "pydiverse-pipedag" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydiverse_pipedag-{{ version }}.tar.gz
-  sha256: 869466dbfcd1b17a284cb5b7db014ec0112289ccf02749794e178f24f3f0f9ac
+  sha256: 3bf30ba1bcfebf205a13dcb13f2ad4c75b46f38c9320c4882b227e908582e81c
 
 build:
   noarch: python
