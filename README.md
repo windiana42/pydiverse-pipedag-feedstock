@@ -144,8 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@NMAC427](https://github.com/NMAC427/)
+* [@pavelzw](https://github.com/pavelzw/)
 * [@windiana42](https://github.com/windiana42/)
-
-
-<!-- dummy commit to enable rerendering -->
 
