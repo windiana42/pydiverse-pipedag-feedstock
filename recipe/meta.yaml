@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - poetry
+    - hatchling
     - pip
     - python >=3.9,<3.11
   run:
