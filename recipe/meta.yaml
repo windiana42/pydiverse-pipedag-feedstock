@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydiverse_pipedag-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydiverse_pipedag-{{ version }}.tar.gz
   sha256: b75159e07f806bd39b2ddd399f849659d8978b2a74a9eb19189f748e44c406a2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - hatchling
     - pip
-    - python >=3.9,<3.11
+    - python {{ python_min }}
   run:
     - pyparsing >=3.0
     - click >=8.1.3
     - pydot >=1.4.2
-    - python >=3.9,<4.0
+    - python >={{ python_min }},<4.0
     - pandas >=1.4.3
     - sqlalchemy >=1.4.39
     - typing-extensions >=4.1.0
@@ -45,6 +45,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: None
