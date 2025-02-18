@@ -3,11 +3,15 @@ About pydiverse-pipedag-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydiverse-pipedag-feedstock/blob/main/LICENSE.txt)
 
-Home: None
+Home: https://github.com/pydiverse/pydiverse.transform
 
 Package license: BSD-3-Clause
 
-Summary: A pipeline orchestration library executing tasks within one python session. It takes care of SQL table (de)materialization, caching and cache invalidation. Blob storage is supported as well for example for storing model files.
+Summary: Pipe based dataframe manipulation library that can also transform data on SQL databases
+
+Documentation: https://pydiversetransform.readthedocs.io/
+
+A pipeline orchestration library executing tasks within one python session. It takes care of SQL table (de)materialization, caching and cache invalidation. Blob storage is supported as well for example for storing model files.
 
 Current build status
 ====================
