@@ -11,6 +11,9 @@ source:
   url: https://files.pythonhosted.org/packages/b6/83/c647fb2c1718e95e55791eb1bf76aafe36fcaacb50feef027a9246f8123a/pydiverse_pipedag-${{ version }}.tar.gz
   sha256: f4817a3b01f6f28b80c388c2e8be3e9f61b48911b1ca49fb996d5211d76da5ff
 
+  patches:
+      - psycopg_binary_fix.patch
+
 build:
   noarch: python
   script: python -m pip install . -vv
