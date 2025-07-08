@@ -17,7 +17,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -43,7 +43,7 @@ requirements:
     - pyparsing >=3.2.3,<4
     - sqlalchemy >=1.4.54,<3
     - pandas >=1.5.3,<3
-    - pyarrow >=20.0.0,<21
+    - pyarrow >=19.0.0,<21
     - adbc-driver-postgresql >=1.6.0,<2
     - psycopg2 >=2.9.10
     - duckdb >=0.10.3,<2
