@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.10.2"
+  version: "0.10.3"
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/b6/83/c647fb2c1718e95e55791eb1bf76aafe36fcaacb50feef027a9246f8123a/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: f4817a3b01f6f28b80c388c2e8be3e9f61b48911b1ca49fb996d5211d76da5ff
+  sha256: 269c3abada3bed1c51c388c09ad8ca3dce6e07b5958a07a82999804cbcb93d9f
 
   patches:
       - psycopg_binary_fix.patch
@@ -17,7 +17,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
