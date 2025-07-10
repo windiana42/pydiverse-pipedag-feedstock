@@ -8,7 +8,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/b6/83/c647fb2c1718e95e55791eb1bf76aafe36fcaacb50feef027a9246f8123a/pydiverse_pipedag-${{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/55/92/37db69bea2a8dde1682e6455a32f5f5be738a8065ebc7a432d76a4dbb457/pydiverse_pipedag-${{ version }}.tar.gz
   sha256: 269c3abada3bed1c51c388c09ad8ca3dce6e07b5958a07a82999804cbcb93d9f
 
   patches:
