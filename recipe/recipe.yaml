@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.10.3"
+  version: "0.10.4"
   python_min: '3.10'
 
 package:
@@ -9,10 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: 269c3abada3bed1c51c388c09ad8ca3dce6e07b5958a07a82999804cbcb93d9f
-
-  patches:
-      - psycopg_binary_fix.patch
+  sha256: 1dec835f5133f467900a6dd324a916e81938d436f53dce6787e2aceb73ae794c
 
 build:
   noarch: python
@@ -38,14 +35,11 @@ requirements:
     - python-box >=7.3.2,<8
     - pyyaml >=6.0.2,<7
     - cryptography >=45.0.4,<46
-    - pydot >=4.0.0,<5
     - click >=8.1.8,<9
     - pyparsing >=3.2.3,<4
     - sqlalchemy >=1.4.54,<3
     - pandas >=1.5.3,<3
     - pyarrow >=19.0.0,<21
-    - adbc-driver-postgresql >=1.6.0,<2
-    - psycopg2 >=2.9.10
     - duckdb >=0.10.3,<2
     - duckdb-engine >=0.15.0,<0.16
     - polars >=1.2.1,<2
@@ -67,8 +61,11 @@ requirements:
     - pydiverse-transform >=0.5.2,<0.6
     - pydiverse-colspec >=0.2.4,<0.3
     - dataframely >=1.2.1,<2
+    - pydot >=4.0.0,<5
     - ibm_db >=3.2.5
     - ibm_db_sa >=0.3.8
+    - adbc-driver-postgresql >=1.6.0,<2
+    - psycopg2 >=2.9.10
     - s3fs >=2025.5.1,<2026
 
 tests:
