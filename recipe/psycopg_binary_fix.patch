@@ -1,5 +1,0 @@
---- output/bld/rattler-build_pydiverse-pipedag_1751978047/work/pyproject.toml	2020-02-02 01:00:00
-+++ output/bld/rattler-build_pydiverse-pipedag_1751978047/work/pyproject.toml	2025-07-08 14:35:27
-@@ -51 +51 @@
--  "psycopg2-binary >=2.9.10",
-+  "psycopg2 >=2.9.10",

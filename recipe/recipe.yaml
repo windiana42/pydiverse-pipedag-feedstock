@@ -11,9 +11,6 @@ source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
   sha256: 1dec835f5133f467900a6dd324a916e81938d436f53dce6787e2aceb73ae794c
 
-  patches:
-      - psycopg_binary_fix.patch
-
 build:
   noarch: python
   script: python -m pip install . -vv
