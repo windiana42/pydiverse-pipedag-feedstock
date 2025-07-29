@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.10.4"
+  version: "0.10.5"
   python_min: '3.10'
 
 package:
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: 1dec835f5133f467900a6dd324a916e81938d436f53dce6787e2aceb73ae794c
+  sha256: 99eae195b1e072f6f57980a5e2374d5e88f6041518caa7a2fdf492d54add90b7
 
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -67,6 +67,7 @@ requirements:
     - adbc-driver-postgresql >=1.6.0,<2
     - psycopg2 >=2.9.10
     - s3fs >=2025.5.1,<2026
+    - boto3 >=1.38.13,<2
 
 tests:
   - python:
