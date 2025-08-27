@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.10.8"
+  version: "0.10.9"
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: dcdee3c73097fd1979d142d37f18cc81a9ef89055b89d4d03a921fedfe12d653
+  sha256: 43fa268f59f20c16367d8db2fde2c6c9501a225abf0ab1c489e2f20dffe83870
 
 build:
   noarch: python
@@ -23,8 +23,8 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pydiverse-common >=0.3.4,<0.4 
-    - typing_extensions >=4.14.0,<5
+    - pydiverse-common >=0.3.12,<0.4 
+    - typing_extensions >=4.14.1,<5
     - networkx >=3.4,<4
     - attrs >=25.3.0,<26
     - pyparsing >=3.0
@@ -58,8 +58,8 @@ requirements:
     - pyodbc >=5.2.0,<6
     - pytsql >=1.4.0,<2
     - bcpandas >=2.6.3,<3
-    - pydiverse-transform >=0.1.5,<0.2 | >=0.5.2,<0.6
-    - pydiverse-colspec >=0.2.4,<0.3
+    - pydiverse-transform >=0.1.5,<0.2 | >=0.5.6,<0.6
+    - pydiverse-colspec >=0.2.8,<0.3
     - dataframely >=1.2.1,<2
     - pydot >=4.0.0,<5
     - ibm_db >=3.2.5
