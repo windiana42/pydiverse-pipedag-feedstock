@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.11.0"
+  version: 0.12.0
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: 66c7ccdbb18ac9a83e6d5a075b436efb20d29641069a866c2f37f17b48d53f3e
+  sha256: 69eb6f535cf1fb581f260058441f8ef63cf32f250bdbbfbf68a81e2a19a03572
 
 build:
   noarch: python
@@ -23,28 +23,27 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pydiverse-common >=0.3.12,<0.4 
+    - pydiverse-common >=0.4.1,<0.5
     - typing_extensions >=4.14.1,<5
     - networkx >=3.4,<4
     - attrs >=25.3.0,<26
-    - pyparsing >=3.0
     - structlog >=25.4.0,<26
     - pynng >=0.8.1,<0.9
     - msgpack-python >=1.1.1,<2
     - packaging >=24.2,<26
     - python-box >=7.3.2,<8
     - pyyaml >=6.0.2,<7
-    - cryptography >=45.0.4,<46
+    - cryptography >=45.0.5,<47
     - click >=8.1.8,<9
     - pyparsing >=3.2.3,<4
     - sqlalchemy >=1.4.54,<3
     - pandas >=1.5.3,<3
-    - pyarrow >=19.0.0,<21
-    - duckdb >=0.10.3,<2
-    - duckdb-engine >=0.15.0,<0.16
+    - pyarrow >=20.0.0,<22
+    - duckdb-engine >=0.15.0,<0.18
     - polars >=1.2.1,<2
     - fsspec >=2025.5.1,<2026
-    - universal_pathlib >=0.2.6,<0.3
+    - python-duckdb >=0.10.3,<1.4
+    - universal-pathlib <0.4,>=0.2.6
   run_constraints:
     - filelock >=3.7.1
     - kazoo >=2.8.0
