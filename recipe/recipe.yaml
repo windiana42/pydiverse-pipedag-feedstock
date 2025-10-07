@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: 0.12.0
+  version: "0.12.0"
   python_min: '3.10'
 
 package:
@@ -23,7 +23,7 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pydiverse-common >=0.4.1,<0.5
+    - pydiverse-common >=0.4.1,<0.5 
     - typing_extensions >=4.14.1,<5
     - networkx >=3.4,<4
     - attrs >=25.3.0,<26
@@ -38,7 +38,8 @@ requirements:
     - pyparsing >=3.2.3,<4
     - sqlalchemy >=1.4.54,<3
     - pandas >=1.5.3,<3
-    - pyarrow >=20.0.0,<22
+    - pyarrow >=19.0.0,<22
+    - duckdb >=0.10.3,<1.4
     - duckdb-engine >=0.15.0,<0.18
     - polars >=1.2.1,<2
     - fsspec >=2025.5.1,<2026
@@ -48,7 +49,7 @@ requirements:
     - filelock >=3.7.1
     - kazoo >=2.8.0
     - dask >=2022.1.0
-    - prefect >=2.13.5,<4a0
+    - prefect >=2.14.2,<3a0 | >=3.4.22,<4a0
     - pydantic >=1.10.9
     - whenever >=0.8.5,<1.0
     - snowflake-sqlalchemy >=1.6.1
@@ -57,8 +58,8 @@ requirements:
     - pyodbc >=5.2.0,<6
     - pytsql >=1.4.0,<2
     - bcpandas >=2.6.3,<3
-    - pydiverse-transform >=0.1.5,<0.2 | >=0.5.6,<0.6
-    - pydiverse-colspec >=0.2.8,<0.3
+    - pydiverse-transform >=0.1.5,<0.2 | >=0.6.0,<0.7
+    - pydiverse-colspec >=0.3.0,<0.4
     - dataframely >=1.2.1,<2
     - pydot >=4.0.0,<5
     - ibm_db >=3.2.5
