@@ -40,7 +40,7 @@ requirements:
     - sqlalchemy >=1.4.54,<3
     - pandas >=1.5.3,<3
     - pyarrow >=19.0.0,<21
-    - duckdb >=0.10.3,<2
+    - duckdb >=0.10.3,<1.4
     - duckdb-engine >=0.15.0,<0.16
     - polars >=1.2.1,<2
     - fsspec >=2025.5.1,<2026
