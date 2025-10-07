@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: 66c7ccdbb18ac9a83e6d5a075b436efb20d29641069a866c2f37f17b48d53f3e
+  sha256: 69eb6f535cf1fb581f260058441f8ef63cf32f250bdbbfbf68a81e2a19a03572
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pydiverse-common >=0.4.0,<0.5 
+    - pydiverse-common >=0.4.1,<0.5 
     - typing_extensions >=4.14.1,<5
     - networkx >=3.4,<4
     - attrs >=25.3.0,<26
