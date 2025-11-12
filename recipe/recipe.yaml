@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.12.1"
+  version: "0.12.2"
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: d1a72d167132f52230d9a0dd0dce1737baf060fe49b495784431d9884a40745d
+  sha256: e65175253204f03be1eb3a24095768e497c9e001e3589b064a1a2286392e1ec8
 
 build:
   noarch: python
@@ -40,10 +40,10 @@ requirements:
     - pandas >=1.5.3,<3
     - pyarrow >=19.0.0,<22
     - duckdb >=0.10.3,<2
+    - python-duckdb >=0.10.3,<2
     - duckdb-engine >=0.15.0,<0.18
     - polars >=1.2.1,<2
     - fsspec >=2025.9.0,<2026
-    - python-duckdb >=0.10.3,<2
     - universal-pathlib <0.4,>=0.3.2
   run_constraints:
     - filelock >=3.7.1
