@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.12.2"
+  version: "0.12.3"
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: e65175253204f03be1eb3a24095768e497c9e001e3589b064a1a2286392e1ec8
+  sha256: c25a3451ce0c410f9f3aeb4d3a5ebf3c8f5c4b2484e7bb38036f255d2ae3cc09
 
 build:
   noarch: python
@@ -46,7 +46,7 @@ requirements:
     - fsspec >=2025.9.0,<2026
     - universal-pathlib <0.4,>=0.3.2
   run_constraints:
-    - filelock >=3.7.1
+    - filelock >=3.20.0
     - kazoo >=2.8.0
     - dask >=2022.1.0
     - prefect >=2.14.2,<3a0 | >=3.4.22,<4a0
