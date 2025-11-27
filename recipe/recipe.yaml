@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.12.4"
+  version: 0.12.5
   python_min: '3.11'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: 93424c7724fd2ed29d4f1204850f3cbc27d0d1d9bc6e7917f78c7db4ee032f71
+  sha256: 0d35693ef3d9532c48cfe572aed46f17a5944dfd91b3a21f8420da2740827cc1
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pydiverse-common >=0.4.1,<0.5 
+    - pydiverse-common >=0.4.1,<0.5
     - typing_extensions >=4.15.0,<5
     - networkx >=3.4,<4
     - attrs >=25.4.0,<26
@@ -38,10 +38,9 @@ requirements:
     - pyparsing >=3.2.5,<4
     - sqlalchemy >=1.4.54,<3
     - pandas >=1.5.3,<3
-    - pyarrow >=19.0.0,<23
-    - duckdb >=0.10.3,<2
+    - pyarrow >=20.0.0,<23
     - python-duckdb >=0.10.3,<2
-    - duckdb-engine >=0.15.0,<0.18
+    - duckdb-engine >=0.15.0,<0.16
     - polars >=1.2.1,<2
     - fsspec >=2025.9.0,<2026
     - universal-pathlib <0.4,>=0.3.2
