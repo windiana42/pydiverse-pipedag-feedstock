@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.12.5"
+  version: 0.12.5
   python_min: '3.11'
 
 package:
@@ -23,7 +23,7 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pydiverse-common >=0.4.1,<0.5 
+    - pydiverse-common >=0.4.1,<0.5
     - typing_extensions >=4.15.0,<5
     - networkx >=3.4,<4
     - attrs >=25.4.0,<26
@@ -38,10 +38,9 @@ requirements:
     - pyparsing >=3.2.5,<4
     - sqlalchemy >=1.4.54,<3
     - pandas >=1.5.3,<3
-    - pyarrow >=19.0.0,<23
-    - duckdb >=0.10.3,<2
+    - pyarrow >=20.0.0,<23
     - python-duckdb >=0.10.3,<2
-    - duckdb-engine >=0.15.0,<0.18
+    - duckdb-engine >=0.15.0,<0.16
     - polars >=1.2.1,<2
     - fsspec >=2025.9.0,<2026
     - universal-pathlib <0.4,>=0.3.2
