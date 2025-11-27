@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: "0.12.4"
+  version: "0.12.5"
   python_min: '3.11'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: 93424c7724fd2ed29d4f1204850f3cbc27d0d1d9bc6e7917f78c7db4ee032f71
+  sha256: 0d35693ef3d9532c48cfe572aed46f17a5944dfd91b3a21f8420da2740827cc1
 
 build:
   noarch: python
