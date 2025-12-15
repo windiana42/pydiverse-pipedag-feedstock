@@ -1,6 +1,6 @@
 context:
   name: pydiverse-pipedag
-  version: 0.12.6
+  version: 0.12.7
   python_min: '3.11'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydiverse_pipedag-${{ version }}.tar.gz
-  sha256: 537b1fdfc9069996dd9aaaf52ec64ca8a297d73fa977a363de8c7be86c88c815
+  sha256: 685ddc3cb9a5102e1efbb869d9cdbba1b56f028c5df0c27362fb89f2c7718d16
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ requirements:
     - cryptography >=45.0.7,<47
     - click >=8.1.8,<9
     - pyparsing >=3.2.5,<4
-    - sqlalchemy >=1.4.54,<3
+    - sqlalchemy >=1.4.54,<3,!=2.0.45
     - pandas >=1.5.3,<3
     - pyarrow >=19.0.0,<23
     - python-duckdb >=0.10.3,<2
