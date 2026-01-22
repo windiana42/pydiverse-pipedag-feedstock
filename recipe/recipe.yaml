@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -30,7 +30,7 @@ requirements:
     - structlog >=25.4.0,<26
     - pynng >=0.8.1,<0.9
     - msgpack-python >=1.1.1,<2
-    - packaging >=25.0,<26
+    - packaging >=23.0,<26
     - python-box >=7.3.2,<8
     - pyyaml >=6.0.3,<7
     - cryptography >=45.0.7,<47
